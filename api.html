@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesHub - Epic Store Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar bg-light border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQygDxEczVPwYwRV80lv7ccd8c9fNrML-S5dg&s" alt="Logo" width="30" height="24">
+                GamesHub
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">XBOX</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="https://store.epicgames.com/en-US" target="_blank">EPIC🔗</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://store.steampowered.com/" target="_blank">STEAM🔗</a></li>
+                </ul>
+                <form class="d-flex" onsubmit="event.preventDefault(); searchGames();">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search GTA, Batman...">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/06/2025_FINAL_RGB_16x9_HERO-164d81ba2776e8915ffd.jpg" class="d-block w-100" alt="Slider 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cms-assets.xboxservices.com/assets/f0/f6/f0f6d77a-c9b7-4130-96de-c246c37f38d5.jpg?n=Cloud-Gaming_Super-Hero-1084_Forza-Horizon-5_1920x1080_01_v2.jpg" class="d-block w-100" alt="Slider 2">
+            </div>
+            <div class="carousel-item">
+      <img src="https://xboxwire.thesourcemediaassets.com/sites/2/2025/04/XBOX_GamePass_Announcement-51498368926d09705cfc.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+       
+      </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="container main-container">
+        <div id="game-list" class="d-flex flex-wrap justify-content-center gap-4">
+            <div class="spinner-border text-light" role="status"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 GamesHub Industrial Training - Solitaire Infosys</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src = "Games.js"></script>
+    
+    <script></script>
+</body>
+</html>
